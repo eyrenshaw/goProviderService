@@ -34,6 +34,7 @@ func withCollection(collection string, s func(*mgo.Collection) error) error {
 	return s(c)
 }
 
+// SearchPerson method description.
 func SearchPerson(q interface{}, skip int, limit int) (searchResults []Person, searchErr string) {
 	searchErr = ""
 	searchResults = []Person{}
